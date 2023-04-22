@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1 </title>
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class=containerHead>
+        <h1 style="text-shadow: 2px 2px 4px #FFFFFF;"> <i class="material-icons"
+                style="font-size: 60px;color: rgb(255, 255, 255); text-shadow: 2px 2px 4px #000000;">adbx</i>Tv Series
+        </h1>
+    </div>
+    <div class=containerBody>
+        <div class=" containerBody">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Channel</th>
+                                <th>Seasons</th>
+                            </tr>
+                        </thead>
+                        <tbody id="seriesView">
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="4">Season average:<h6 id="average"></h6>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="cards" class="card" style="width: 18rem;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./Serie.js"></script>
+    <script>
+
+        function renderDescription(idSerie) {
+            var cdescription = document.getElementById("".concat(idSerie));
+            if (cdescription.style.visibility === "hidden") {
+                cdescription.style.visibility = "visible";
+            } else {
+                cdescription.style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>

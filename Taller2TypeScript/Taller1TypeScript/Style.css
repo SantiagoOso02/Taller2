@@ -1,0 +1,66 @@
+.containerHead
+{
+    display: flex;
+    background-color: rgb(10, 183, 247);
+    border-radius: 5px;
+    border-color: black;
+    border-width: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    vertical-align: sub;
+}
+h1
+{
+    color: rgb(255, 255, 255);
+    
+}
+
+h5
+{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    
+}
+.containerBody
+{
+    display: inline-flex;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+table,th,tb 
+{
+    border: 1px solid;
+
+    background-color: rgb(243, 243, 243);
+
+}
+h6
+{
+    font-size: 20px;
+
+}
+tbody
+{
+    background-color: #e0d9d9;
+}
+tfoot
+{
+    background-color: rgb(243, 242, 242);
+
+}
+
+body
+{
+    background-color: black;
+}
+.card
+{
+    visibility:hidden;
+    
+
+}
